@@ -50,7 +50,6 @@ function changePicture(index){
     switch(index){
         case 1:
             player.innerHTML=`<img src="./1.jpg"style="width: 100%; height: auto" />`
-            
         break;
         case 2:
             player.innerHTML=`<img src="./2.jpg"style="width: 100%; height: auto" />`
