@@ -24,15 +24,17 @@ body{
     justify-content: space-between;
     display: flex;
     list-style: none;
-    margin-top: 1.7rem;
-    padding-left: 2rem;
+    margin-top: 1.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
+
 #heading li{
-    padding: 0 0.5rem 0.7rem 0.5rem;
+    padding: 0rem 0.3rem 0rem 0.3rem;
 }
 #heading li a{
-    background-color: rgb(248, 96, 223);
-    padding: 0.8rem;
+    background-color: rgb(231, 63, 142);
+    padding: 0.6rem;
 }
 #heading li a:hover{
     background-color: rgb(168, 20, 136);
@@ -47,14 +49,16 @@ body{
 #main ul{
     list-style: none;
     margin-top: 2rem;
-    padding-left: 7.5rem;
+    padding-left: 6fr;
 }
 #main li{
     padding: 0 0 2rem  0;
+    text-align: center;
 }
 #main li a{
     background-color:rgb(248, 96, 223);
     padding: 0.5rem;
+
 }
 #main li a:hover{
     background-color: rgb(168, 20, 136);
