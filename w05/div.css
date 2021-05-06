@@ -19,6 +19,7 @@ body{
     height: 7rem;
     background-color: rgb(53, 224, 19);
     text-align: center;
+    
 }
 #heading ul{
     display: flex;
