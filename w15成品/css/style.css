@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Ibarra Real Nova', serif;
+  background-color: #f9f2f2;
+  font-size: 2rem;
+}
+
+.search {
+  padding-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .logo {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Archivo Narrow';
+}
+
+header .logo div {
+  padding: 1rem 2rem;
+  border: 5px solid yellow;
+  -webkit-box-shadow: -0.5rem 0.5rem 0 0 rgba(0, 0, 0, 0.2);
+          box-shadow: -0.5rem 0.5rem 0 0 rgba(0, 0, 0, 0.2);
+  font-size: 3.5rem;
+  border-radius: 10px;
+  background-color: aqua;
+  color: #060679;
+}
+
+header .main-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+  position: fixed;
+  background-color: rgba(122, 201, 197, 0.75);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .main-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+header .main-menu ul li {
+  padding: 1rem 3rem;
+}
+
+header .main-menu ul li a {
+  font-size: 3rem;
+  color: #064914;
+}
+
+header .main-menu ul li a:hover {
+  border-radius: 5px;
+  background-color: #c4c7ee;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: -0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.2);
+          box-shadow: -0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+header .main-menu ul li ul {
+  border: black 1px solid;
+  position: absolute;
+  top: 100%;
+  background-color: rgba(49, 38, 148, 0.75);
+  display: none;
+}
+
+header .main-menu ul li ul li {
+  border-bottom: black 1px solid;
+  padding: 0.5rem;
+}
+
+header .main-menu ul li ul a {
+  font-size: 1rem;
+  color: yellow;
+}
+
+header .main-menu ul li ul a:hover {
+  border-radius: 5px;
+  background-color: #07117a;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: -0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.2);
+          box-shadow: -0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+header .main-menu ul li:hover > ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+section.articles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+  min-width: 30rem;
+  padding-top: 3.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+section.articles article {
+  border: 5px solid yellow;
+  -webkit-box-shadow: -0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.2);
+          box-shadow: -0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.2);
+  border-style: double;
+  border-color: red;
+  border-width: 8px;
+  background-color: #9196c7;
+}
+
+section.articles article img {
+  width: 100%;
+  height: auto;
+}
+
+section.articles article p {
+  margin: 1rem 0;
+  font-size: 15px;
+}
+
+section.articles article h4 {
+  color: #f8f85b;
+}
+
+section.articles article a {
+  border-radius: 15px;
+  padding: 0 1.5rem;
+  background-color: #b464e2;
+  color: #2023b1;
+}
+
+section.articles article a:hover {
+  color: aqua;
+}
+
+@media (min-width: 768px) {
+  header {
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+  }
+  header .logo {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+}
+/*# sourceMappingURL=style.css.map */
